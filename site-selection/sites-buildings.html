@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<head>
+<?php $thisPage="Sites Buildings"; ?>
+<title>Sites &amp; Buildings</title>
+
+<meta name="description" content="Lots zoned commercial, light industrial, or heavy industrial.See regional maps with mileage to major markets as well as local maps and lot maps.">
+
+<meta name="keywords" content="sites, maps, zone, reservation, Port Umatilla, Columbia River, Wanapa, greenfield, acres, industry, industries">
+
+<link rel="stylesheet" href="../css/imap/imap-toggle.css">
+	<script type="text/javascript" src="../css/imap/map-tool.js"></script>
+
+<style>	
+/* Map Nav Shared By All - Start */
+.mapContainer{position: relative; width:100%;  padding:0; margin:0;margin-bottom:20px;border:#ff9900 solid 1px;}
+.mapImageHolder{position: relative; display: block; width: 100%;margin:auto;}
+.imageTest{width: 100%; }
+#mapNav {display: block;padding:0;width:100%;margin:0;text-align:center;}
+#mapNav ul {list-style: none;width:100%; padding:0;margin-top: 10px;}
+#mapNav li {display: inline;width:100%;padding:0; margin: 0 5px; font-size:12px;}
+#mapNav button {height:35px;  left: 0; border:none; padding:0 2%;font-size:.5em;}
+#mapNav button:hover{background-color:#fff; color:#ff9900;border:#ff9900 solid 1px; }
+.topMapNav li ul {
+		display: none;  /* Hides the drop-down menu */
+		height: auto;									
+		margin: 0; /* Aligns drop-down box underneath the menu item */
+		padding: 0; /* Aligns drop-down box underneath the menu item */}				
+.topMapNav li:hover ul 	{display: block; /* Displays the drop-down box when the menu item is hovered over */
+                        }
+/* Map Nav 1 Start */
+.topMapNav{height: 35px;background-color:#fff; color:#ff9900;}
+ul.topMapNav{}
+li.topMapNav{ display: inline-block;}
+button.mapB1{color:#fff;background-color:#ff9900;width: 31%;}
+/* Map Nav 1 End */
+
+/* Map Nav 2 Start */
+.subMapNav{height: 35px; background-color:#fff;color:#FF9900; }
+ul.subMapNav {position: absolute; display: inline-block; top:35px;z-index:5;left:0;border-top: 10px solid #FFFFFF;}
+li.subMapNav {background-color:#ff9900; height: 10px;}
+button.mapB2{ color:#FFF; background-color:#FF9900; }
+/* Map Nav 2 End */
+.subMapBar{height: 32px; background-color:#fff;margin-bottom:20px;border:none;}
+/* Map End*/
+/*320*/ 	
+@media only screen and (min-width: 20em) {
+#mapNav button {font-size:.7em;}}
+ 
+/*480*/ 
+@media only screen and (min-width: 30em) {
+#mapNav button {font-size:1em;}
+button.mapB1{width: 28%;}}
+
+/*832*/
+@media only screen and (min-width: 52em) {
+#mapNav button {font-size:1.4em;}}
+/* Map Nav -  End */
+	
+#imageReplaceCBP {border-radius:20px; width:100%; margin-bottom:30px;}
+#imageReplace {border-radius:20px; width:100%; margin-bottom:30px;}
+#imageReplaceWIS {border-radius:20px; width:100%; margin-bottom:30px;}
+</style>
+</head>
+<body>
+
+<div id="main">
+<div id="container">
+
+<header><?php  include "../php/header.php"; ?></header>
+
+<div class="grid_12">
+<h1>Available Sites</h1>
+<table>
+<thead>
+<tr>
+<th>Sites</th>
+<th>Coyote North</th>
+<th>Coyote South</th>
+<th>Coyote East</th>
+<th>Wanapa Industrial Site</th> 
+</tr>
+</thead>
+<tbody>
+<tr>
+<th>Acres available<BR>
+now</th>
+<td>13 Acres</td>
+<td>140 Acres</td>
+<td>18 Acres</td>
+<td>120 Acres</td>
+</tr>
+<tr>
+<th>Expansion acres</th>
+<td>24.20 Acres</td>
+<td>580 Acres</td>
+<td>37 Acres</td>
+<td>0 Acres</td> 
+</tr>
+<tr>
+<th>Zoning</th>
+<td>Commercial/Retail</td>
+<td>Light Industrial</td>
+<td>Commercial/<BR>
+Retail</td>
+<td>Heavy Industrial</td>
+</tr>
+<tr>
+<th>This space is well suited<br> for these industries</th>
+<td>Office Buildings,<BR>
+Retail, Restaurants,<BR>
+Medical Offices</td>
+<td>Distribution/<BR>
+Logistics, Light<BR>
+Manufacturing,<BR>
+Value Added<BR>
+Agriculture</td>
+<td>Retail,<BR>
+Restaurants,<BR>
+Hotels</td>
+<td>Food Processing,<BR>
+Distribution/<BR>
+Logistics,<BR>
+Manufacturing,<BR>
+Data Centers,<BR>
+Power<BR>
+Generation</td>
+</tr>
+	
+<tr>
+<th>Adjacent Uses</th>
+<td>Agriculture &<BR>
+Commercial</td>
+	
+<td>Agriculture</td>
+	
+<td>Agriculture &<BR>
+Commercial</td> 
+	
+<td>Industrial &<BR>
+Wildlife</td>
+</tr>
+	
+</tbody>
+</table>
+<br/>
+
+<br/>
+<div id="maps"></div>
+<H1>Site Maps</H1>
+<H2>Coyote Business Park</H2>
+<p>Located in Pendleton, Oregon at I-84 exit 216, Coyote Business Park has lots zoned light industrial and commercial/retail. With a diverse tenant base that includes technology, medical, logistics support services, retail, office buildings, tourism and hospitality Coyote Business Park has established itself as an economic hub for the entire region. Flat sites with utilities at the curb are ready for your next project!</p>
+<br/>
+
+<H2>Wanapa Industrial Site</H2>
+<p>Wanapa Industrial site is heavy industrial zoned land adjacent to the Port of Umatilla on the Columbia River. The Wanapa Industrial Site is part of our reservation enterprise zone and therefore provides tenants the same tax advantages that tenants of Coyote Business Park enjoy.</p>
+<ul>
+  <li>120 acre greenfield site four miles from the interstate.</li>
+  <li>Close to Port of Umatilla barge and rail access, a natural gas hub, and a BPA substation.</li>
+  <li>Air permitting is through the EPA Regional Office and the site is classified as an attainment area.</li>
+  <li>$3.5 million infrastructure development completed August 2018.</li>
+  </ul>
+<br/>
+
+<!-- Map Compilation start --> 
+<div class="mapContainer">
+
+<div id="mapNav">
+<ul class="topMapNav">
+  <li><button class="mapB1 shadow" onclick="openMap('Regional');">Regional</button></li>
+	<li> 
+  	<button class="mapB1 shadow" onclick="openMap('CBP_SM');">Coyote Business Park</button>
+        <ul class="subMapNav">
+  		<li><button class="mapB2 shadow" onclick="openMap('CBP_SM');">Site Map</button></li>          
+  		<li><button class="mapB2 shadow" onclick="openMap('CBP');">Local Area</button></li>  				
+		<li><button class="mapB2 shadow" onclick="openMap('North');">North</button></li>
+		<li><button class="mapB2 shadow" onclick="openMap('South');">South</button></li>
+		<li><button class="mapB2 shadow" onclick="openMap('East');">East</button></li>
+		<li><button class="mapB2 shadow" onclick="openMap('Utilities');">Utilities</button></li>
+        <li><button class="mapB2 shadow" onclick="openMap('Expansion');">Expansion</button></li>      
+		</ul>
+    </li>
+  <li><button class="mapB1 shadow" onclick="openMap('WIS_SM');">Wanapa Industrial Site</button>
+        <ul class="subMapNav">  		   
+		<li><button class="mapB2 shadow" onclick="openMap('WIS_SM');">Site Map</button></li>
+		<li><button class="mapB2 shadow" onclick="openMap('WIS');">Local Area</button></li>
+        </ul>  
+  </li>
+</ul>
+<div class="subMapBar"></div>
+</div>
+
+<div class="mapImageHolder">
+<div id="Regional" class="map">
+  <h3>Regional</h3>
+  <p>Coyote Business Park and Wanapa Industrial Site are centrally located to the major markets of the Pacific Northwest.</p>
+
+<!-- REGIONAL imap start --> 
+<div id="map-container" class="imageMap">
+<div id="state-map" style="display: block;"> 
+<div id="local-map" style="display: none;"></div>
+<map id="local-imap" name="local-imap"></map> 
+<map name="Map">	
+<!-- imap start -->  
+<div onclick="">
+		<div class="imageMap" aria-haspopup="true">
+			<img src="../image/maps/imap/regional.png" alt="" />
+			<div class="hotspots">
+			  <div title="420 miles"><a class="p1" rel="nofollow" aria-haspopup="false"></a><p><strong>Vancouver, BC, Canada </strong>420 miles</p></div>
+				<div title="285 miles"><a class="p2" rel="nofollow" aria-haspopup="false"></a><p><strong>Seattle, Washington </strong>285 miles</p></div>
+                  <div title="210 miles"><a class="p3" rel="nofollow" aria-haspopup="false"></a><p><strong>Portland, Oregon </strong>210 miles</p></div>
+                  <div title="256 miles"><a class="p4" rel="nofollow" aria-haspopup="false"></a><p><strong>Salem, Oregon </strong>256 miles</p></div>    
+                  <div title="320 miles"><a class="p5" rel="nofollow" aria-haspopup="false"></a><p><strong>Eugene, Oregon </strong>320 miles</p></div>                
+                  <div title="244 miles"><a class="p6" rel="nofollow" aria-haspopup="false"></a><p><strong>Bend, Oregon </strong>244 miles</p></div>         
+                  <div title="86 miles"><a class="p7" rel="nofollow" aria-haspopup="false"></a><p><strong>Tri-Cities, Washington </strong>86 miles</p></div>
+                  <!--<div title="50.2 miles"><a class="p8" rel="nofollow" aria-haspopup="false"></a><p><strong>Wanapa Industrial Site in Umatilla, Oregon </strong>50.2 miles</p></div>
+                  <div title="5.4 miles"><a class="p9" rel="nofollow" aria-haspopup="false"></a><p><strong>Pendleton, Oregon </strong>5.4 miles</p></div> 
+                  <div title="0 miles"><a class="p10" rel="nofollow" aria-haspopup="false"></a><p><strong>Coyote Business Park in Mission, Oregon </strong>0 miles</p></div>--> 
+                  <div title="206 miles"><a class="p11" rel="nofollow" aria-haspopup="false"></a><p><strong>Spokane, Washington   </strong>206 miles</p></div>              
+                   <div title="223 miles"><a class="p12" rel="nofollow" aria-haspopup="false"></a><p><strong>Boise, Idaho </strong>223 miles</p></div>                 
+                   <div title="405 miles"><a class="p13" rel="nofollow" aria-haspopup="false"></a><p><strong>Missoula, Montana </strong>405 miles</p></div>                   
+                   <div title="405 miles"><a class="p14" rel="nofollow" aria-haspopup="false"></a><p><strong>Medford, Oregon </strong>488 miles</p></div>                   
+                   <div title="405 miles"><a class="p15" rel="nofollow" aria-haspopup="false"></a><p><strong>Helena, Montana </strong>517 miles</p></div>                  
+                   <div title="405 miles"><a class="p16" rel="nofollow" aria-haspopup="false"></a><p><strong>Butte, Montana </strong>521 miles</p></div>                   
+                   <div title="405 miles"><a class="p17" rel="nofollow" aria-haspopup="false"></a><p><strong>Pocatello, Idaho </strong>448 miles</p></div>      
+       </div>
+  </div>
+<!-- imap end -->  
+</div>
+</map>
+</div>
+</div>
+</div>
+<!-- REGIONAL imap end -->   
+
+
+<div id="Local" class="map" style="display:none">
+  <h3>Local</h3>
+  <p>Take a look at either Coyote Business Park or Wanapa Industrial Site local maps.</p> <img src="../image/maps/imap/holder.png" class="imageTest">
+</div>
+
+<!-- note id Local and id CBP are supposed to be the same image -->
+<div id="CBP" class="map" style="display:none">
+  <h3>Coyote Business Park local area</h3>
+  <p>&nbsp;</p><img src="../image/maps/imap/local_cbp.png" class="imageTest">
+</div>
+
+<div id="WIS" class="map" style="display:none">
+  <h3>Wanapa Industrial Site local area</h3>
+  <p>&nbsp;</p><img src="../image/maps/imap/local_wis.png" class="imageTest">
+</div>
+
+<div id="CBP_SM" class="map" style="display:none">
+  <h3>Coyote Business Park site map</h3>
+  <p>&nbsp;</p><img src="../image/maps/imap/site-map.png" class="imageTest">
+</div>
+
+<div id="Expansion" class="map" style="display:none">
+  <h3>Expansion Map</h3>
+  <p>There are 500+ acres available for expansion.</p><img src="../image/maps/imap/expansion.png" class="imageTest" >
+</div>
+
+<div id="North" class="map" style="display:none">
+  <h3>Coyote Business Park North</h3>
+  <p>There are a variety of lot sizes to choose from.</p> <img src="../image/maps/imap/north.png" class="imageTest">
+</div>
+
+<div id="South" class="map" style="display:none">
+  <h3>Coyote Business Park South</h3>
+  <p>There are a variety of lot sizes to choose from.</p><img src="../image/maps/imap/south.png" class="imageTest">
+</div>
+
+<div id="East" class="map" style="display:none">
+  <h3>Coyote Business Park East</h3>
+  <p>There are a variety of lot sizes to choose from.</p><img src="../image/maps/imap/east.png" class="imageTest">
+</div>
+
+<div id="Utilities" class="map" style="display:none">
+  <h3>Utilities Map</h3>
+  <p>Includes electricity, water, and sewer.</p><img src="../image/maps/imap/utilities.png" class="imageTest">
+</div>
+
+<div id="WIS_SM" class="map" style="display:none">
+  <h3>Wanapa Industrial site map</h3>
+  <p>There are 120 developable acres available.  Roads and lot lines shown are conceptual only.</p><img src="../image/maps/imap/sitemap_wis.png" class="imageTest">
+</div>
+
+</div>
+</div>
+<!-- Map Compilation End --> 
+
+<div class="clearfix"></div>
+
+<p class="noPrint">Coyote Business Park overview <A href="http://coyotebusinesspark.com/download/coyote-business-park-overview.pdf" target="_blank" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/>PDF version</A><br/>
+
+Coyote Business Park Site map <a href="../../../../download/coyote-business-park-site-map.pdf" target="_blank" title="Site Map PDF" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/> PDF version</A><br/>
+
+Coyote Business Park Regional map <a href="../download/coyote-business-park-regional-map.pdf" target="_blank" title="Regional Map PDF" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/> PDF version</A><br/>
+
+Coyote Business Park Expansion map <a href="../../../../download/coyote-business-park-expansion-acres.pdf" target="_blank" title="Expansion Map PDF" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/> PDF version</A></p>
+	
+	
+<p class="noPrint">Wanapa Industrial Site overview <A href="http://coyotebusinesspark.com/download/wanapa-industrial-site-overview.pdf" target="_blank" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/>PDF version</A><br/>
+
+Wanapa Industrial Site map <a href="../../../../download/wanapa-industrial-site-map.pdf" target="_blank" title="Site Map PDF" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/> PDF version</A><br/>
+
+Wanapa Industrial Site Regional map <a href="../download/wanapa-industrial-site-map-regional-map.pdf" target="_blank" title="Regional Map PDF" style="text-decoration:none; font-weight:bold;"><img style="height:14px; margin-top:10px;" src="../image/buttons/pdf.png"/> PDF version</A><br/>
+</p>  
+
+
+
+
+</div>         
+</div>
+
+<footer><?php  include "../php/footer.php"; ?></footer>
+
+</div>
+</body>
+</html>

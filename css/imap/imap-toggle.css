@@ -1,0 +1,57 @@
+/* Image maps styles */
+.imageMap {width:100%; position:relative; margin-top:0px;}
+.imageMap img {display:block; width:100%; margin-top:10px;}
+.imageMap .hotspots {width:100%; height:100%; position:absolute; left:0; top:0; visibility:hidden;}
+.imageMap a {display:block; position:absolute; background:#330000; z-index:100; opacity:0.2; filter: alpha(opacity=20); border:1px solid transparent; border-radius:10px;}
+.imageMap a:hover{cursor:pointer; }
+.imageMap a + p {position:absolute; left:17px; top:-20px; width:100%;display:none;}
+
+.imageMap:hover .hotspots {visibility:visible;}
+.imageMap p strong {padding:0; margin:0;}
+.imageMap p {padding:0; margin:0;}
+
+.imageMap .hotspots div:hover p {display:block;}
+.imageMap .hotspots div:hover a {background:#fff; z-index:100; opacity:0.3; filter: alpha(opacity=30); border:1px solid #330000;}
+/* Regional Image map styles */
+.imageMap a.p1 {left:20.7%; top:1.35%; width:1%; height:2%;}
+.imageMap a.p2 {left:25.15%; top:23.5%; width:1%; height:2%;}
+.imageMap a.p3 {left:23.19%; top:52.38%; width:1%; height:2%;}
+.imageMap a.p4 {left:21.15%; top:58%; width:1%; height:2%;}
+.imageMap a.p5 {left:20.7%; top:70.3%; width:1%; height:2%;}
+.imageMap a.p6 {left:27.55%; top:70.35%; width:1%; height:2%;}
+.imageMap a.p7 {left:42.5%; top:41.7%; width:1%; height:2%;}
+.imageMap a.p8 {left:43.75%; top:46.75%; width:1%; height:2%;}
+.imageMap a.p9 {left:45.25%; top:50.1%; width:1%; height:2%;}
+.imageMap a.p10 {left:46.9%; top:50.5%; width:1%; height:2%;}
+.imageMap a.p11 {left:54.1%; top:22.9%; width:1%; height:2%;}
+.imageMap a.p12 {left:61%; top:76.15%; width:1%; height:2%;}
+.imageMap a.p13 {left:74.5%; top:33.55%; width:1%; height:2%;}
+.imageMap a.p14 {left:21.9%; top:92%; width:1%; height:2%;}
+.imageMap a.p15 {left:85.65%; top:35.3%; width:1%; height:2%;}
+.imageMap a.p16 {left:83.1%; top:45.3%; width:1%; height:2%;}
+.imageMap a.p17 {left:83.1%; top:85.1%; width:1%; height:2%;}
+
+@media only screen and (min-width: 20em) {
+
+}
+  
+@media only screen and (min-width: 30em) {
+
+}
+
+@media only screen and (min-width: 37.5em) {
+
+}
+
+@media only screen and (min-width: 48em) {
+
+}
+
+@media only screen and (min-width : 64em) {
+
+}
+
+
+@media only screen and (min-width : 120em) {
+
+}

@@ -1,0 +1,49 @@
+@charset "utf-8";
+/* CSS Document */
+
+@media print {
+
+	body {background: white; font-size: 12pt; width:100%;}
+	
+	#container {width: 100%; margin: 0; float: none; background: transparent;}
+	
+	table{border-collapse:collapse;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing: border-box;width: 99%;}
+	
+	th,td {border:.01em solid #330000;text-shadow:none;}
+	th {background:#fff;text-shadow:none;text-align: left;}	 
+
+	.logo{width:30%;margin-left:35%; margin-bottom:0px;}
+	nav {display: none;}	
+	
+	.bannerImg {display: none;}
+	.bannermedium {width: 99%;}
+	
+	img {width: 30%;}
+	
+	.printConstructionImage {min-width:50%;height:auto;}
+	
+	.home {width:70%; }
+	
+	#taxbox{width:30%; float: right; }
+	
+	.need {padding-top: 15px; border-top: 1px darkgrey solid;} /* .need is for the CBP homepage that has a figure that holds the "Need Assistance..." information.*/
+
+	figure > img {display: inline-block; width: 25%;float: left;}
+	figcaption h3{padding: 0 10px !important;}
+	
+	.button{display: none !important;}
+
+	footer {page-break-after: always;}
+	
+	.footercontainer{width:100% !important;  }
+	
+	.noPrint {display: none;}
+	
+	/*Site & Building Page*/
+	#mapNav {display: none;}
+	.map {display: inline-block !important; width:50%;}
+	#Local.map {display: none !important;}
+	.mapContainer{position: relative; width:100%;  padding:0; margin:0px;border:none;}
+}
+
+@page { margin: 1.25cm  1cm 0.75cm 1cm;}

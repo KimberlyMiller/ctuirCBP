@@ -1,0 +1,369 @@
+@charset "utf-8";
+/* CSS Document */
+
+/**************** ALL CSS - Start ****************/
+/* @media all includes all base styles for others to inherit.  It is also, a styles for the smallest screensize, mobile first. */
+@media all {
+*{margin:0;padding:0;}
+html, body{ height:100%;-webkit-text-size-adjust:100%;-ms-text-size-adjust:100%; font:normal 12px "Myriad Pro", "Helvetica", Arial, Cuprum, sans-serif; padding-top:0px; color:#330000;}
+
+#container{min-height: 100%; margin: 0 auto; background-color:#FFF; max-width:95%; }
+
+/*Note main {display:block;} <main> element is not supported by IE 11 or prior */
+
+address {font-style: normal; padding-top: 30px;}
+h1,h2,h3,h4,p,ul,time{line-height: 150%; padding:0 15px;}
+h1{font-size:1.5em; font-weight:900; color:#ff9900;}
+h2{font-size:1em; font-weight: 900; text-transform: uppercase; color:black;}
+h3{font-size:1em; font-weight:900; color:#006600;}
+h4{font-size:1em; font-weight:200; color:#006600;}
+p,ul,time{font-size:1em; font-weight:100;color: #575757;}
+sourceText{font-size:1em; font-weight:100;color: #575757; margin: 20px 0px;}
+p {padding-bottom: 15px;}
+b {font-weight: 900;}
+::-moz-selection {background-color:#ff9900;color: #ffffff;}
+::selection {background-color:#ff9900;color: #ffffff;}
+	
+time{color:darkgrey;}
+ul,ol{padding:0 0 15px 5em;}
+a {color:#330000;}
+a:hover {color:#ff9900;}
+	
+.indented{padding-left:3em;}
+
+.button{width:7.75em;background-color:#006600;border-radius:8px;border:none;padding:.5em 1.2em;margin:1% 0% 2% 0; text-align:center;text-decoration:none;display:inline-block;font-size:1.2em;font-weight:900;-webkit-transition-duration: 0.4s; /* Safari */transition-duration:0.4s; cursor:pointer;}
+.buttonshadow{-webkit-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+-moz-box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);
+box-shadow:0 8px 16px 0 rgba(0,0,0,0.2), 0 6px 20px 0 rgba(0,0,0,0.19);}
+.button1{background-color:#006600; color:#ffcc66; border-radius:8px; border:1px solid #ffcc66}
+.button1:hover{background-color:#ff9900; color:#ffffcc;}
+hr{display: block;height:.1em;margin-top:0.5em;margin-bottom:0.5em;margin-left:auto;margin-right:auto;
+width:100%;color:#99cc99;background-color: #99cc99;}
+.shadow{-webkit-box-shadow:-2px 3px 24px -4px rgba(0,0,0,0.31);-moz-box-shadow:-2px 3px 24px -4px rgba(0,0,0,0.31);
+box-shadow:-2px 3px 24px -4px rgba(0,0,0,0.31);}
+
+.floatleft{float:left;}
+.floatright{float:right;}
+
+.clearfix:before, .clearfix:after{content: ""; display:table; }
+.clearfix:after{clear:both;}
+.clearfix{zoom:1;}
+
+article {margin-bottom:20px; padding-top:10px; border-bottom: 1px darkgrey solid; }
+article h1{font-size:1.5em; font-weight: 900; text-transform: capitalize; color:black;}
+
+figcaption> h3 {padding-top: 15px; border-top: 1px darkgrey solid;}
+
+table{font-size:.7em;border-collapse:collapse;box-sizing:border-box;-webkit-box-sizing:border-box;-moz-box-sizing: border-box;width:100%;}
+.tableHolder{width:100%;margin-left:auto;margin-right:auto;}	
+table,th,td {border:.01em solid #330000;text-shadow:none;padding:.5em .2em;}
+th {background:#fff;text-shadow:none;text-align: left;}	 
+thead th {background-color: #99cc99;font-weight: bold;text-align: center;vertical-align: center;}			
+td {text-align:center;background:#fff;}
+tr:hover th{color:white;background-color:#ff9900;}
+tr:hover td{color:white;background-color:#ff9900;}
+
+.TextWrap{float:right;margin:15px 5px;}
+.TextWrapLeft{float:left;margin:15px 5px;}
+
+.grid_1{width:98.333333333333%;}
+.grid_2{width:98.333333333333%;}
+.grid_3{width:98.333333333333%;}
+.grid_4{width:98.333333333333%;}
+.grid_5{width:98.333333333333%;}
+.grid_6{width:98.333333333333%;}
+.grid_7{width:98.333333333333%;}
+.grid_8{width:98.333333333333%;}
+.grid_9{width:98.333333333333%;}
+.grid_10{width:98.333333333333%;}
+.grid_11{width:98.333333333333%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.13333333333333% 0 0.13333333333333%;}
+}
+/**************** ALL CSS - End ****************/
+
+
+
+
+/********************************************************************************/
+
+
+
+
+/**************** Header - Start ****************/	
+.bannerImg {
+	position:absolute;
+	width:100%; 
+	height:200%;
+	border:none;}	
+.image {position: absolute; visibility: hidden;}
+.slide_nav12837 {position: relative;}
+.bullet_1234 {float: left;}
+.logo{display:block;padding:1.5% 0 2% 0; margin-left: auto; margin-right: auto;}	
+
+@media only screen and (max-width: 30em) {	
+.logo{margin-top: 40px;width:40%;}}
+
+@media only screen and ( min-width:30em ) {
+.logo{width:25%;}}
+	
+@media only screen and (max-width:90em) {	
+.bannermedium{background:#transparent; width:100%; border:0px; position:relative; outline:none; -webkit-border-radius:0px; -moz-border-radius:0px; -o-border-radius:0px; border-radius:0px; zoom:1; top:-.5em; margin:auto; padding:0;}	
+.banneranime{display:none;}}
+
+@media only screen and ( min-width:90em ) {
+.bannermedium{display:none;}	
+.banneranime{background:#transparent; border:0px; position:relative; outline:none; -webkit-border-radius:0px; -moz-border-radius:0px; -o-border-radius:0px; border-radius:0px; zoom:1; top:-.5em; margin:auto; padding:0;left:-30px;}}
+/**************** Header - End ****************/	
+
+
+
+/********************************************************************************/
+
+
+
+
+/**************** Navigation - Start ****************/	
+/* @media all includes all base styles for others to inherit.  It is also, a styles for the smallest screensize, mobile first. */
+@media all {
+#openNav {
+	position: fixed!important;
+	width: 100%; background-color: #fff;
+	top: 0;
+	right: 0;
+	text-align: right;
+    z-index: 10;}
+
+/* Nav Fonts & Buttons Start */
+.openNav-button{font-size: 18px!important;}
+.navClose-button{font-size:18px!important;position: fixed;height: 35px;background-color:#ECECEC;}
+.navButton{
+	border: none;
+	display:inline-block;
+	outline:0;
+	padding:8px 16px; 
+	vertical-align:middle;
+	overflow:hidden;
+	text-decoration:none;
+	text-align:center;
+	cursor:pointer;
+	white-space:nowrap;}
+.navButton{-webkit-touch-callout:none;-webkit-user-select:none;-khtml-user-select:none;-moz-user-select:none;-ms-user-select:none;user-select:none}   
+.navButton:disabled{cursor:not-allowed;opacity:0.3}
+a.navButton{font-size: 16px!important; padding-top: 0; padding-bottom: 10px;}
+.navButton:hover{color:#FF9900;background-color:#transparent;}
+#menuList > h2 {padding-top: 10px;}
+	
+/* Nav Fonts & Buttons SEnd */
+.sidebar-container{
+	height:100%;
+	background-color:#fff;
+	position:fixed!important;
+	top:0;
+	right: 0;
+	z-index:1;
+	overflow:auto;}
+#menuList{padding-top: 40px;}
+.sidebar-container, .navClose-button, #menuList > a {
+	display:block;
+	width:100%;
+	float:none;
+	text-align:left;
+	border:none;
+	outline:none;
+	white-space:normal;}
+.sidebarShadow {-webkit-box-shadow: inset 7px 4px 17px -4px rgba(0,0,0,0.29);-moz-box-shadow: inset 7px 4px 17px -4px rgba(0,0,0,0.29);box-shadow: inset 7px 4px 17px -4px rgba(0,0,0,0.29);}
+.navAnimate-right{
+	position:relative;
+	animation:animateright 0.4s}@keyframes animateright{from{right:-300px;opacity:0} to{right:0;opacity:1}}
+}
+
+@media only screen and (min-width: 30em) {
+	#openNav {background-color: transparent;}
+	#openNav.openNav-button {font-size:24px!important;}}
+@media only screen and (max-width: 30em) {#navSidebar{width: 100%!important;}}
+/**************** Navigation - End ****************/	
+
+
+
+/********************************************************************************/
+
+
+
+
+/**************** Footer Start ****************/	
+#footer{background-color:#ffffcc;position:relative; width:100%;clear:both;font-size: .9em;}
+.footercontainer{width:60%;margin-left:auto;margin-right:auto;text-align:center;}
+.emailButton {padding: 8px 10px; border-radius: 10px; border: 1px solid rgb(91, 91, 91); border-image: none; color: rgb(51, 0, 0); display: inline-block; text-shadow: none; background-color: rgb(255, 255, 204);}	
+/**Footer - Social Media Icon Navigation Bar START**/
+#navSocial {height: 100%;margin-left: -35%;}
+#navSocial ul {}	
+#navSocial ul li {display: inline-block;}	
+#navSocial li a {display: list-item; padding: 25px 20px; list-style: none;} 	
+#li{left:0px; width:48px; background:url('../image/buttons/sprite.svg') 0px 0px;}
+#tw{left:55px; width:48px; background:url('../image/buttons/sprite.svg') 0px 100px;}
+#fb{left:115px; width:48px; background:url('../image/buttons/sprite.svg') 0px -100px;}
+#li a:hover{background:url('../image/buttons/sprite.svg') 0px -50px;}
+#tw a:hover{background:url('../image/buttons/sprite.svg') 0px 50px;}
+#fb a:hover{background:url('../image/buttons/sprite.svg') 0px -150px;}
+@media only screen and (min-width: 22em) {#navSocial {margin-left: -12%;}}
+@media only screen and (min-width: 80em) {#navSocial {margin-left: -6%;}}
+/**Footer-Social Media Icon Navigation Bar END**/
+/**************** Footer End ****************/	
+
+
+
+/********************************************************************************/
+
+
+
+
+/**************** ALL CSS Media Queries - Start ****************/
+@media only screen and (min-width: 20em) {
+.tableHolder{width:100%;}
+table{font-size:.7em;}
+#container{max-width:95%;}			
+.grid_1{width:98.333333333333%;}
+.grid_2{width:98.333333333333%;}
+.grid_3{width:98.333333333333%;}
+.grid_4{width:98.333333333333%;}
+.grid_5{width:98.333333333333%;}
+.grid_6{width:98.333333333333%;}
+.grid_7{width:98.333333333333%;}
+.grid_8{width:98.333333333333%;}
+.grid_9{width:98.333333333333%;}
+.grid_10{width:98.333333333333%;}
+.grid_11{width:98.333333333333%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.13333333333333% 0 0.13333333333333%;}
+}
+
+/*480*/  
+@media only screen and (min-width: 30em) {
+h1{font-size:1.3em;}
+h2{font-size:1em;}
+h3{font-size:1em;}
+h4{font-size:1em;}
+p,ul,time{font-size:1em;}
+table{font-size:.9em;}
+.tableHolder{width:95%;}
+body{background:url(../image/bkg-medium.jpg);  background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed;}
+#container{max-width:95%;}	
+.grid_1{width:6.6666666666667%;}
+.grid_2{width:15%;}
+.grid_3{width:23.333333333333%;}
+.grid_4{width:31.666666666667%;}
+.grid_5{width:40%;}
+.grid_6{width:48.333333333333%;}
+.grid_7{width:56.666666666667%;}
+.grid_8{width:65%;}
+.grid_9{width:73.333333333333%;}
+.grid_10{width:81.666666666667%;}
+.grid_11{width:90%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.83333333333333% 0 0.83333333333333%;}
+}
+
+/*600*/
+@media only screen and (min-width: 37.5em) {
+h1{font-size: 2.25em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.5em;}
+p,ul,time{font-size: 1.25em;}	
+table{font-size:.9em;}
+.tableHolder{width:50%;}
+#container{max-width:95%;}	
+body{background:url(../image/bkg-medium.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed;}
+.grid_1{width:6.6666666666667%;}
+.grid_2{width:15%;}
+.grid_3{width:23.333333333333%;}
+.grid_4{width:31.666666666667%;}
+.grid_5{width:40%;}
+.grid_6{width:48.333333333333%;}
+.grid_7{width:56.666666666667%;}
+.grid_8{width:65%;}
+.grid_9{width:73.333333333333%;}
+.grid_10{width:81.666666666667%;}
+.grid_11{width:90%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.83333333333333% 0 0.83333333333333%;}
+}
+
+/*768*/
+@media only screen and (min-width: 48em) {
+h1{font-size: 2.25em;}
+h2{font-size: 1.5em;}
+h3{font-size: 1.5em;}
+h4{font-size: 1.5em;}
+p,ul,time{font-size: 1.25em;}	
+table{font-size:.9em;}
+.tableHolder{width:50%;}
+#container{max-width:75%;}
+body{background:url(../image/bkg.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed;}
+.grid_1{width:6.6666666666667%;}
+.grid_2{width:15%;}
+.grid_3{width:23.333333333333%;}
+.grid_4{width:31.666666666667%;}
+.grid_5{width:40%;}
+.grid_6{width:48.333333333333%;}
+.grid_7{width:56.666666666667%;}
+.grid_8{width:65%;}
+.grid_9{width:73.333333333333%;}
+.grid_10{width:81.666666666667%;}
+.grid_11{width:90%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.83333333333333% 0 0.83333333333333%;}
+}
+
+/*1024*/
+@media only screen and (min-width : 64em) {
+h1{font-size: 2.5em;}
+h2{font-size: 1.75em;}
+h3{font-size: 1.75em;}
+h4{font-size: 1.75em;}
+p,ul,time{font-size: 1.5em;}	
+table{font-size:1.2em;}
+.tableHolder{width:50%;}
+#container{max-width:60%;}
+body{background:url(../image/bkg.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed;}
+.grid_1{width:6.6666666666667%;}
+.grid_2{width:15%;}
+.grid_3{width:23.333333333333%;}
+.grid_4{width:31.666666666667%;}
+.grid_5{width:40%;}
+.grid_6{width:48.333333333333%;}
+.grid_7{width:56.666666666667%;}
+.grid_8{width:65%;}
+.grid_9{width:73.333333333333%;}
+.grid_10{width:81.666666666667%;}
+.grid_11{width:90%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.83333333333333% 0 0.83333333333333%;}}
+
+/*1920*/
+@media only screen and (min-width : 120em) {
+h1{font-size: 2.5em;}
+h2{font-size: 1.75em;}
+h3{font-size: 1.75em;}
+h4{font-size: 1.75em;}
+p,ul,time{font-size: 1.5em;}	
+table{font-size:1.5em;}
+.tableHolder{width:50%;}
+#container{max-width:60%;}
+body{background:url(../image/bkg.jpg); background-repeat:no-repeat; background-size:100% 100%; background-attachment:fixed;}
+.grid_1{width:6.6666666666667%;}
+.grid_2{width:15%;}
+.grid_3{width:23.333333333333%;}
+.grid_4{width:31.666666666667%;}
+.grid_5{width:40%;}
+.grid_6{width:48.333333333333%;}
+.grid_7{width:56.666666666667%;}
+.grid_8{width:65%;}
+.grid_9{width:73.333333333333%;}
+.grid_10{width:81.666666666667%;}
+.grid_11{width:90%;}
+.grid_12{width:98.333333333333%;}
+.grid_1,.grid_2,.grid_3,.grid_4,.grid_5,.grid_6,.grid_7, .grid_8,.grid_9,.grid_10,.grid_11,.grid_12{margin:0  0.83333333333333% 0 0.83333333333333%;}
+}
+/**************** ALL CSS Media Queries - End ****************/
